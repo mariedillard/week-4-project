@@ -34,11 +34,14 @@ $(document).ready(function(){
     });
     newOrder.total = newOrder.totalwithTax();
     if (newOrder.pizzaSauce.length >= 2 ) {
-      alert("Error with order, please only choose one sauce!")
+      alert("Error with order, please only choose one sauce!");
+      location.reload(true);
     } else if (newOrder.pizzaSauce.length === 0 && newOrder.pizzaToppings.length === 0 && newOrder.beveragesOrdered.length === 0 ) {
-      alert("Error with order, you didn't order anything!")
+      alert("Error with order, you didn't order anything!");
+      location.reload(true);
     } else if (0 === newOrder.zipcodeAddress.length || 0 === newOrder.streetAddress.length || 0 === newOrder.cityAddress.length) {
-      alert("Error with order, you did not list a delivery address.")
+      alert("Error with order, you did not list a delivery address.");
+      location.reload(true);
     } else {
       $("#order-form").hide();
       $("ul#orders").append(
@@ -52,7 +55,6 @@ $(document).ready(function(){
       $(".cityAddress").text(newOrder.cityAddress);
       $(".total").text(newOrder.total);
     }
-    newOrder = new order([ ], [ ], [ ], " ", " ");
     $('#order')[0].reset();
   });
 });
