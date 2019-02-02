@@ -1,14 +1,13 @@
-# _Count with Me_
+# _Ordering Pizza_
 
-#### _A website to help you count, February/01/2019_
+#### _A website for a fake pizza chain, February/01/2019_
 
 #### By _**Marie @Milkybot**_
 
-## _Description_
+## Description
+_A website for ordering pizza that allows you to fill out an order form and submit, showing you your order and total with taxes applied._
 
-_A website that counts to a number with you, with fun unexpected additions to the process! To view on github pages, follow the link: https://milkybot.github.io/week-3-project/_
-
-## _Specifications_
+## Specifications
 | Purpose | Input | Output |
 | ------- | ----- | ------ |
 | When you input your order, it stores the information. | "*Checks box for Pizza Sauce*" | "*Returns the Pizza Sauce with order*" |
@@ -37,7 +36,6 @@ _Contact Marie @mariedillard on github and mariedillard@protonmail.com for suppo
 
 ## Technologies Used
 
-_Created using atom, code relies and uses elements from jquery-3.1.1 and bootstrap css. Questionnaire and javascript elements rely heavily on jquery for the logic, while html and css relies heavily on bootstrap for proper formatting and browser compatibility._
-
+_Created using atom, code relies and uses elements from jquery-3.1.1 and bootstrap css._
 ### License
 Copyright (c) 2019 **milkybot**
