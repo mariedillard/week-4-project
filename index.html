@@ -71,19 +71,21 @@
                 <label for="zipcodeAddress">Zipcode:</label>
                 <input type="text" class="form-control" id="zipcodeAddress">
                 </div>
-              <button type="submit" class="btn btn-success">Add</button>
+              <button type="submit" class="btn btn-danger">Add</button>
             </div>
           </form>
         </div>
-        <div id="order-info">
+        <form id="order-info">
           <ul id="orders">
           </ul>
           <p>The sides you ordered were:<span class="sides"></span>.</p>
           <p>You ordered a<span class="pizzaSauce"></span> pizza. The toppings you ordered were:<span class="pizzaToppings"></span>.
           <p>The beverages you ordered were:<span class="beverages"></span>.</p>
           <p>Your order total is: $<span class="total"></span>
-          <p>We are sending your order to: <span class="streetAddress"></span> <span class="cityAddress"></span> <span class="zipcodeAddress"></span>
-        </div>
+          <p>We are sending your order to: <span class="streetAddress"></span> <span class="cityAddress"></span> <span class="zipcodeAddress"></span></p>
+          <button type="submit" class="btn btn-danger"> Make a New Order
+          </button>
+        </form>
       </div>
     </body>
   </html>

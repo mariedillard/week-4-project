@@ -54,5 +54,9 @@ $(document).ready(function(){
       $(".total").text(newOrder.total);
     }
     $('#order')[0].reset();
+    $("#order-info").submit(function(event) {
+      event.preventDefault();
+      location.reload(true);
+    });
   });
 });
