@@ -17,7 +17,6 @@ Order.prototype.totalwithTax = function () {
 };
 
 $(document).ready(function(){
-  debugger;
   $("form#order").submit(function(event) {
     event.preventDefault();
     newOrder.zipcodeAddress = $("input#zipcodeAddress").val();
@@ -25,7 +24,6 @@ $(document).ready(function(){
     newOrder.streetAddress = $("input#streetAddress").val();
     $("input:checkbox[value=pizzaSauce]:checked").each(function(){
       newOrder.pizzaSauce.push($(this).attr("id"));
-      alert(newOrder.pizzaSauce);
     });      $("input:checkbox[value=pizzaToppings]:checked").each(function(){
       newOrder.pizzaToppings.push($(this).attr("id"));
     });
