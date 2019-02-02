@@ -1,0 +1,92 @@
+<!DOCTYPE hmtl>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script
+			  src="https://code.jquery.com/jquery-3.3.1.js"
+			  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+			  crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+    <title>Field Mouse Pizzeria</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row" id="order-form">
+        <form id="order">
+          <div class="col-sm-6">
+            <p>
+              <b>PIZZA PIE:</b> Every pizza includes our homemade crust and three layers of mozarella and provolone cheese. (Please Select One)
+            </p>
+            <p>
+              <b>Sauce:</b>
+            </p>
+            <p>
+              <input type="checkbox" value="pizzaSauce" id=" White Sauce">White sauce<br>
+              <input type="checkbox" value="pizzaSauce" id=" Red Sauce">Red sauce<br>
+              <input type="checkbox" value="pizzaSauce" id=" Pesto">Pesto<br>
+              <input type="checkbox" value="pizzaSauce" id=" Barbecue">Barbecue<br>
+              <input type="checkbox" value="pizzaSauce" id=" Ranch">Ranch<br>
+            </p>
+            <p>
+              <b>Toppings:</b>
+            </p>
+            <p>
+              <input type="checkbox" value="pizzaToppings" id=" Pepperoni (2$)">Pepperoni (2$)<br>
+              <input type="checkbox" value="pizzaToppings" id=" Anchovies (2$)">Anchovies (2$)<br>
+              <input type="checkbox" value="pizzaToppings" id=" Tomatoes (2$)">Tomatoes (2$)<br>
+              <input type="checkbox" value="pizzaToppings" id=" Spinach (2$)">Spinach (2$)<br>
+              <input type="checkbox" value="pizzaToppings" id=" Chicken (2$)">Chicken (2$)<br>
+              <input type="checkbox" value="pizzaToppings" id=" Bacon (2$)">Bacon (2$)<br>
+              <input type="checkbox" value="pizzaToppings" id=" Canadian Bacon (2$)">Canadian Bacon (2$)<br>
+              <input type="checkbox" value="pizzaToppings" id=" Red Onions (2$)">Red Onions (2$)<br>
+              <input type="checkbox" value="pizzaToppings" id=" Mushrooms (2$)">Mushrooms (2$)<br>
+              <input type="checkbox" value="pizzaToppings" id=" Olives (2$)">Olives (2$)<br>
+            </p>
+          </div>
+          <div class="col-sm-6">
+            <p>
+              <b>BEVERAGES:</b> We offer a range of Pepsi-Cola products and specialty drinks.
+            </p>
+            <p>
+              <b>Soda-pop:</b>
+            </p>
+            <p>
+                <input type="checkbox" value="beverages" id=" Pepsi (3$)">Pepsi (3$)<br>
+                <input type="checkbox" value="beverages" id=" Mountain Dew (3$)">Mountain Dew (3$)<br>
+                <input type="checkbox" value="beverages" id=" Mug Root Beer (3$)">Mug Root Beer (3$)<br>
+                <input type="checkbox" value="beverages" id=" Mug Cream Soda (3$)">Mug Cream Soda (3$)<br>
+                <input type="checkbox" value="beverages" id=" Sierra Mist (3$)">Sierra Mist (3$)<br>
+                <input type="checkbox" value="beverages" id=" Lipton Iced Tea (3$)">Lipton Iced Tea (3$)<br>
+                <input type="checkbox" value="beverages" id=" Tropicana (3$)">Tropicana (3$)<br>
+                <br>
+            </p>
+                <div class="form-group">
+                <label for="streetAddress">Street Address:</label>
+                <input type="text" class="form-control" id="streetAddress">
+                </div>
+                <div class="form-group">
+                <label for="cityAddress">City, State:</label>
+                <input type="text" class="form-control" id="cityAddress">
+                </div>
+                <div class="form-group">
+                <label for="zipcodeAddress">Zipcode:</label>
+                <input type="text" class="form-control" id="zipcodeAddress">
+                </div>
+              <button type="submit" class="btn btn-success">Add</button>
+            </div>
+          </form>
+        </div>
+        <div id="order-info">
+          <ul id="orders">
+          </ul>
+          <p>The sides you ordered were:<span class="sides"></span>.</p>
+          <p>You ordered a<span class="pizzaSauce"></span> pizza. The toppings you ordered were:<span class="pizzaToppings"></span>.
+          <p>The beverages you ordered were:<span class="beverages"></span>.</p>
+          <p>Your order total is: $<span class="total"></span>
+          <p>We are sending your order to: <span class="streetAddress"></span> <span class="cityAddress"></span> <span class="zipcodeAddress"></span>
+        </div>
+      </div>
+    </body>
+  </html>
